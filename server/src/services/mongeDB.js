@@ -1,8 +1,13 @@
 const mongoose = require('mongoose');
+require("dotenv").config(
+    // {path: path to file}
+);
 
-const PASSWORD = '';
+console.log(process.env.HOST);
 
-const MONGO_URL = ``;
+const PASSWORD = process.env.PASSWORD;
+
+const MONGO_URL = process.env.MONGO_URL;
 
 mongoose.set("strictQuery", false);
 
