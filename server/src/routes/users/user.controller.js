@@ -4,7 +4,6 @@ const User = require('../../models/user.mongo');
 
 var JWT_SECRET = process.env.JWT_SECRET;
 
-// httpCreateNewUser
 async function httpCreateNewUser(req, res){
     console.log(req.body);
     const { emailAddress, fullName, username, password: plainTextPassword } = req.body;
