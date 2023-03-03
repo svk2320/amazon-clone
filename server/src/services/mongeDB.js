@@ -1,13 +1,9 @@
 const mongoose = require('mongoose');
-require("dotenv").config(
-    // {path: path to file}
-);
+require("dotenv").config();
 
-console.log(process.env.HOST);
+const PASSWORD = process.env.MONGODB_PASSWORD;
 
-const PASSWORD = process.env.PASSWORD;
-
-const MONGO_URL = process.env.MONGO_URL;
+const MONGO_URL = `mongodb+srv://amazon-clone-20:${PASSWORD}@amazon-clone.ezw7aua.mongodb.net/Users?retryWrites=true&w=majority`;
 
 mongoose.set("strictQuery", false);
 

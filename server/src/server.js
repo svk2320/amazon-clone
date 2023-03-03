@@ -1,5 +1,5 @@
 const http = require('http');
-const { mongoConnect } = require('./mongo')
+const { mongoConnect } = require('./services/mongeDB')
 const app = require('./app');
 
 const PORT = process.env.PORT || 5000;
