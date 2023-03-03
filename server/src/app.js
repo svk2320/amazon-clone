@@ -3,7 +3,7 @@ const cors = require('cors');
 const bcrypt = require('bcrypt');
 var jwt = require('jsonwebtoken');
 
-const User = require('./user');
+const User = require('./models/user');
 const app = express();
 
 JWT_SECRET = 'OJVNIOERIOivijtri ewrioj)(*)$#8074584uf80ue87uoh*)**(&#$*)U';
